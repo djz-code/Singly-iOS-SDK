@@ -215,7 +215,7 @@
         //
         if (!granted)
         {
-            SinglyLog(@"Access to the Facebook account on the device was denied.");
+            SinglyLog(@"Access to the Facebook account on the device was denied: %@", accessError.localizedDescription);
 
             // If there was an error object, it means that the user denied
             // access, so we should be in an aborted state...
