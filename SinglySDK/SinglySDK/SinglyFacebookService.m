@@ -378,7 +378,7 @@
     
     if (self.urlSchemeSuffix)
     {
-        params[@"local_client   _id"] = self.urlSchemeSuffix;
+        params[@"local_client_id"] = self.urlSchemeSuffix;
     }
 
     NSString *facebookAppURL = [NSString stringWithFormat:@"fbauth://authorize?%@", [params queryStringValue]];
