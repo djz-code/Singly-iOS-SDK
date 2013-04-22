@@ -70,7 +70,6 @@
     // Check for the Facebook URL Scheme in Info.plist.
     //
     NSArray *urlTypesArray = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleURLTypes"];
-    NSLog(@"URL types %@", urlTypesArray);
     if (urlTypesArray)
     {
         for (NSDictionary *urlTypeDictionary in urlTypesArray)
